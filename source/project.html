@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Project.js</title>
+   <link rel="stylesheet" href="styles.css">
+   <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+   <script src="../config/stages.js" type="text/javascript" defer></script>
+   <script src="../config/high_scores.js" type="text/javascript" defer></script>
+   <script src="project.js" type="text/javascript" defer></script>
+</head>
+<body onload="setUp()">
+	<h1>Project.js</h1>
+	
+    <button type="button" id="ReadMe" onclick=alert(README);>CLICK ME</button> <br>
+	<div>
+		Score: 
+		<div id="score"></div>
+	</div>
+	<div id="fps">Framerate: </div>
+    <canvas id="world" height="500" width="500"></canvas>
+    
+    <div id="settings">
+    	Linear physics depth:
+        <input type="text" id="rails_depth">
+		<button type="button" id="auto_rails" onclick=toggle_auto_rails()>Optimization is: OFF</button>
+    </div>
+    <div id="controls">
+    	<h2>Controls:</h2>
+    	<h4>
+			Toggle Camera Mode
+			<button type="button" id="Camera" onclick=updateControls("Camera");>KeyC</button> <br>
+
+			Thrust
+    		<button type="button" id="Thrust" onclick=updateControls("Thrust");>Space</button> <br>
+   		
+    		Rotate Left
+    		<button type="button" id="Rotate_Left" onclick=updateControls("Rotate_Left");>ArrowLeft</button> <br>
+    
+    		Rotate Right
+    		<button type="button" id="Rotate_Right" onclick=updateControls("Rotate_Right");>ArrowRight</button> <br>
+    		
+    		Freeze Time
+    		<button type="button" id="Freeze_Time" onclick=updateControls("Freeze_Time");>KeyF</button> <br>
+    		
+    		Reload Level
+			<button type="button" id="Reload" onclick=updateControls("Reload");>KeyR</button> <br>
+			
+			Toggle Menu
+    		<button type="button" id="Menu" onclick=updateControls("Menu");>Escape</button> <br>
+    	</h4>
+    	
+    </div>
+    
+</body>
+
+</html>
