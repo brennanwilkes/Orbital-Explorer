@@ -1,10 +1,8 @@
 /** 
-	@namespace project.js
-	CPSC-1045-001
+	@namespace Orbital-Explorer
 	@since 25/10/19 
 	@version 1.0
 	@author Brennan Wilkes 
-	@author 100322326
 */
 
 /*
@@ -214,7 +212,7 @@ const MENU_KEYPRESS_MAP = [	key_press_game,key_press_win,
 const TICK_MAP = [			tick_gameplay,
 							tick_win_menu,
 							tick_lose_menu,
-							function(){menu(START_MENU_OPTIONS,"WELCOME TO PROJECT.JS");},
+							function(){menu(START_MENU_OPTIONS,"ORBITAL EXPLORER");},
 							function(){menu(STAGES_DISPLAY_OPTIONS,"LOAD STAGE");},
 							function(){menu(STAGES_DISPLAY_OPTIONS,"HIGH SCORES");},
 							loading_screen_display
