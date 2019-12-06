@@ -8,14 +8,9 @@
 */
 
 /*
-	Hey Ryan, just wanted to let you know that I really enjoyed taking your course this semester. The level of the material was a litle bit intro for me based on my background, but you still made it a good time, so thanks for that! Enjoy your holidays!
-
 	JSDOCS generation command
 	jsdoc source/project.js -d documentation/
 */
-
-const README = "Hi! Welcome to project.js! \n\nThe goal of the game is to fly your ship to the planet highlighted in gold. Make sure not to crash into the wrong planet! NOTE: By default, loading into a stage, or reloading a stage freezes time to allow you to take in the stage. To move, you'll have to unfreeze time. \n\nThe default keybinds are listed below. If your keyboard doesn't have one or more of them, fear not, you can change them by clicking the control's button, and then pressing the key that you wish the control to be binded to. \n\nSome things you should definitely try out: \n1) Play each of the levels in order \n2) Pick a stage ([4] fortress works well) and float around exploring in first person camera mode. Make sure to fly the ship around in 1st person mode aswell! \n3) Try out some random stages! Sometimes it generates some really cool ones. NOTE: Generating a random stage sometimes takes a few seconds \n4) Try to beat the highscores! Reload the program and they will persist \n5) Compile and check out the documentation by navigating to the project/ directory and running the jsdocs command listed on line 11 \n6) Mess around with the linear physics depth. Some stages make really cool patterns \n7) Turn up yo sounds! PS. I hope you played MAELSTORM back in the 90s ;)";
-
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // --------------------------------------------------------------------------------------- GLOBAL VARIABLE DEFINITIONS ---------------------------------------------------------------------------------------
@@ -1105,10 +1100,10 @@ function update_rails(amt){
 function toggle_auto_rails(){
 	auto_optimize = auto_optimize * -1;
 	if(auto_optimize===1){
-		set_HTML("auto_rails","Optimization is ON");
+		set_HTML("auto_rails","Slow computer optimizations are: ON");
 	}
 	else{
-		set_HTML("auto_rails","Optimization is OFF");
+		set_HTML("auto_rails","Slow computer optimizations are: OFF");
 	}
 }
 
